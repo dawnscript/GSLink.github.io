@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+ <head></*骨架*/>
+ <meta charset="utf-8"> </*網頁使用字元編碼*/>
+ <title>GoShare常用連結</title> </*網頁標題*/>
+    <style>
+    html{background-image:url(https://i.imgur.com/O7Fuowt.png);}
+    body{ padding:0 50px 20px 50px;}
+    h1{text-align:center;font-size:45px;font-weight:bolder;font-family:cursive;padding:20px 0 0 0;}
+    h2,h3{font-size:35px;font-family:cursive;text-align:center;}
+    li{font-family:times,serif;font-size:20px;}
+    p{text-align:center;color:red;font-weight:bold;}
+    a{text-decoration:none;}
+    img{display:block;border-style:solid;border-color:rgb(223,223,223);border-width:0.5}
+    iframe{opacity:0;}
+    .bottom{font-family:times;font-size:15px;}
+    .point{font-size:15px;color:red;}
+    .event{display:inline-flex;justify-content:center}
+    #a{opacity:0;}
+    </style> </*CSS*/>
+ </head>
+  <body></*內文*/>
+  <h1 id="top">常用連結</h1>
+  <p>*米字為使用教學，網站若無權限請洽DUTY*</p>
+  <ul></*ul：條列(無順序)*/>
+  <li><a href="https://docs.google.com/spreadsheets/d/19JdCxXoXgSFxk70rh781spsawkjBPUkUjrm9GD4WiZY/" target="_blank">GS資料表</a></li>
+  <li><a href="https://gogoro.zendesk.com/agent/dashboard/" target="_blank">ZenDesk</a></li>
+  <li><a href="https://fleet.ridegoshare.com/customer/search/" target="_blank">Fleet Management</a></li>
+  <li><a href="https://docs.google.com/spreadsheets/d/1dmhBrOXaqeE85Wy8-IS0QwJWhzB_9sAtsBIyrbwzWqs/edit?usp=sharing" target="_blank">金額計算表(線上版)</a><a href="#tutorial3" class="point">*</a></li>
+  <li><a href="https://www.google.com/maps/d/u/0/viewer?ll=23.719498379884676%2C121.52726342780954&z=8&mid=1PZJlWNl6RwjMI0hQdX5hZvwiVEkt_v8" target="_blank">GoShare界外調度費查詢</a><a href="#tutorial1" class="point">*</a></li>
+  <li><a href="https://www.event.ridegoshare.com/operating-scooters-cn/" target="_blank">車輛操作手冊</a></li>
+  <li><a href="https://www.gogoro.com/tw/findus/" target="_blank">換電站查詢</a><a href="#tutorial2" class="point">*</a></li>
+  <li><a href="https://docs.google.com/document/d/1V2oRh24YyK9jE0raZ5hvDP5vbKJy8tmr2m80VIuwn70/" target="_blank">GoShare SOP</a></li>
+  <li><a href="https://drive.google.com/file/d/1pJxHkdctt_uu7o_KHh7CMbPlztpvHHBO/view?usp=sharing" target="blank">遠端急救包</a><b class="point">←含教學PDF及貼多多</b></li>
+  <li><a href="http://172.30.200.111/TrustERP/LoginSalary.aspx" target="_blank">薪資查詢系統</a></li>
+  <li><button onclick="copyDivToClipboard()">電話值機網址</button><b class="point">←點選即可複製</b></li>
+  <div id="a" > 172.30.200.150:8000/src/Login.jsp </div>
+  <script>
+  function copyDivToClipboard() {
+  var range = document.createRange();
+  range.selectNode(document.getElementById("a"));
+  window.getSelection().removeAllRanges(); // clear current selection
+  window.getSelection().addRange(range); // to select text
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();// to deselect
+  }
+  </script>
+  </ul>
+   <h2>目前活動</h2>
+   <p>*滑鼠移動到上方會顯示活動日期*</p>
+   <a class="event" target="_blank" href="https://www.event.ridegoshare.com/cathay-piggy-bank"></*國泰小豬撲滿*/>
+   <img width="540";height="105" src="https://goshare-fleet-ads.s3.ap-southeast-1.amazonaws.com/e88a3529-b219-4e95-b474-abf87416d840.png" alt="圖片壞了QQ" title="2022/6/8~2022/9/7"></a>
+   <a class="event" target="_blank" href="https://www.event.ridegoshare.com/shiseidochallenge202206"></*GSx資生堂*/>
+   <img width="540";height="105" src="https://goshare-fleet-ads.s3.ap-southeast-1.amazonaws.com/719fb172-bf62-48b5-bc8f-ddf142353cd0.png" alt="圖片壞了QQ" title="已截止，獎品20227/18前寄出"></a>
+   <a class="event" target="_blank" href="https://goshare-lets-ride.squarespace.com/promotions"></*常駐活動*/>
+   <img width="540";height="105" src="https://goshare-fleet-ads.s3.ap-southeast-1.amazonaws.com/97aef2e9-dbc3-4e2f-8e80-fd94648712b3.png" alt="圖片壞了QQ"></a>
+   <h3>使用教學</h3>
+   <ul>
+   <li><a href="https://www.google.com/maps/d/u/0/viewer?ll=23.719498379884676%2C121.52726342780954&z=8&mid=1PZJlWNl6RwjMI0hQdX5hZvwiVEkt_v8" target="_blank" id="tutorial1">GoShare界外調度費查詢</a></li>
+    <ol></*條列：有順序*/>
+    <li>於下圖紅框處右方點三次(不要點到藍色連結)可全選數字</li>
+    <img src="https://i.imgur.com/q9kaQO7.png" alt="圖片壞了QQ">
+    <li>複製後開啟界外調度費地圖，取消不需要的服務類型</li>
+    <img src="https://i.imgur.com/8oiAGsi.png" alt="圖片壞了QQ">
+    <li>點選放大鏡貼上複製的數字，尋找地圖上橘點的色塊，點選所在的色塊即會顯示調度費用</li>
+    <img src="https://i.imgur.com/FJnzduq.png" alt="圖片壞了QQ">
+    <p><img src="https://i.imgur.com/mWK29WR.png" alt="圖片壞了QQ"></p>
+    </ol>
+   <li><a href="https://www.gogoro.com/tw/findus/" id="tutorial2">換電站查詢</a></li>
+    <ol>
+    <li>直接點選下圖藍色數字開啟連結</li>
+    <img src="https://i.imgur.com/q9kaQO7.png" alt="圖片壞了QQ">
+    <li>點選按鈕複製地址並開啟換電站查詢網站，若無地址可點選附近店家或建築物複製(如下圖紅樓山莊)</li>
+    <img src="https://i.imgur.com/7vHVLKA.png" alt="圖片壞了QQ"><img src="https://i.imgur.com/b7MpkS6.png" alt="如定位旁「紅樓山莊」等">
+    <li>於左上角貼上地址並搜尋即可確認附近換電站及地址</li>
+    <img src="https://i.imgur.com/kIeVYf9.png" alt="圖片壞了QQ"><img src="https://i.imgur.com/fUWQiEh.png" alt="圖片壞了QQ">
+    </ol>
+    <li><a href="https://docs.google.com/spreadsheets/d/1dmhBrOXaqeE85Wy8-IS0QwJWhzB_9sAtsBIyrbwzWqs/edit?usp=sharing" target="_blank" id="tutorial3">金額計算表</a></li>
+    <ol>
+    <img src="https://i.imgur.com/BdPRQdb.png" alt="圖片壞了QQ">
+    <li>從MainPage確認目前無人使用的工作表</li>
+    <img src="https://i.imgur.com/yGhULm4.png" alt="圖片壞了QQ">
+    <li>今日使用者落自己帳號，避免跟他人共用</li>
+    <li>確認「用戶類型」及「車款」後再進行計算</li>
+    <li>欄位若有輸入錯誤會於黃框顯示提示</li>
+    <img src="https://i.imgur.com/o5NitKG.png" alt="圖片壞了QQ">
+    </ol>
+   </ul>
+   <center><a href="#top" class="bottom">·TOP·</a></center>
+  </body>
+</html>
